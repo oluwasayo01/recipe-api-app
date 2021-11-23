@@ -20,7 +20,7 @@ jobs:
           # This assumes pytest is installed via the install-package step above
           command: |
             pip install docker-compose
-            docker-compose run app sh -c "python manage.py test && flake8
+            docker-compose run app sh -c "python manage.py test && flake8"
 
 workflows:
   test: 
